@@ -24,7 +24,7 @@ static void takuzuStringPrint(unsigned int n, unsigned int bits)
     
     if(pVal == val)
       if(++same == 2) {
-        valid = 0;
+        valid = false;
         break;
       }
   }
