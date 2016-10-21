@@ -29,8 +29,11 @@ static void takuzuStringPrint(unsigned int n, unsigned int bits)
       }
   }
     
-  if(valid) takuzuPrintBinary(n, bits);
-  if(n != 0) takuzuStringPrint(n - 1, bits);
+  if(valid)
+    takuzuPrintBinary(n, bits);
+  
+  if(n != 0)
+    takuzuStringPrint(n - 1, bits);
 }
 
 void takuzuString(unsigned int n)
